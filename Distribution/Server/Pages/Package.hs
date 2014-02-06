@@ -241,7 +241,7 @@ renderVersion (PackageIdentifier pname pversion) allVersions info =
 -- it is important to show this all the time, we can reenable
 renderDownloads :: Int -> {- Int -> Version -> -} (String, Html)
 renderDownloads totalDown {- versionDown version -} =
-    ("Downloads", toHtml $ {- show versionDown ++ " for " ++ display version ++
+    ("Downloads in last 30 days", toHtml $ {- show versionDown ++ " for " ++ display version ++
                       " and " ++ -} show totalDown ++ " total")
 
 renderFields :: PackageRender -> [(String, Html)]
